@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: the title shown on the browser tab -->
+  <title>JC Smiley | MyVillage</title>
+
+  <style>
+    /* ---------- COLORS (change these to restyle the whole card) ---------- */
+    :root {
+      --brick: #B5432F;      /* brick red */
+      --card: #FBF6EF;       /* off white */
+      --text: #4A3B36;       /* warm dark brown for body text */
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #FFFFFF;
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 400px;
+      background: var(--card);
+      border: 1px solid #EFE3D6;
+      border-radius: 20px;
+      padding: 40px 24px;
+      box-shadow: 0 6px 24px rgba(74, 59, 54, 0.08);
+    }
+
+    /* Each section gets space below it */
+    .card > * { margin-bottom: 28px; }
+    .card > *:last-child { margin-bottom: 0; }
+
+    /* Profile photo (real image) */
+    .photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--brick);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Gray placeholder circle with initials (delete when you add your photo) */
+    .photo-placeholder {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: #C9C9C9;
+      color: #FFFFFF;
+      font-size: 2.5rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 2rem;
+      font-weight: 700;   /* bolder than body text */
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--brick);
+    }
+
+    .tagline {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    /* Logo (real image): modest size, keeps its shape */
+    .logo {
+      display: block;
+      max-width: 160px;
+      max-height: 100px;
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Dashed placeholder box (delete when you add your logo) */
+    .logo-placeholder {
+      width: 160px;
+      height: 80px;
+      border: 2px dashed var(--brick);
+      border-radius: 8px;
+      color: var(--brick);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact p { margin: 0 0 8px; }
+
+    .contact a {
+      color: var(--brick);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .contact a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+
+    <!-- ===== PROFILE PHOTO ===== -->
+    <!-- IMAGE FILENAME: your photo file is called profile.jpg (change the name here if yours differs) -->
+  
+    <img class="photo" src="image_3.jpg" alt="Portrait photo of JC Smiley, founder of MyVillage">
+
+
+    <!-- ===== NAME, BUSINESS, TAGLINE ===== -->
+    <div>
+      <!-- EDIT: your name -->
+      <h1>JC Smiley</h1>
+      <!-- EDIT: your business name -->
+      <h2>MyVillage</h2>
+      <!-- EDIT: your tagline -->
+      <p class="tagline">Every new mother and child deserves support from Day 1</p>
+    </div>
+
+    <!-- ===== LOGO ===== -->
+    <!-- IMAGE FILENAME: your logo file is called logo.png (change the name here if yours differs) -->
+   
+    <img class="logo" src="test-logo.jpeg" alt="MyVillage logo">
+    
+    <div class="logo-placeholder">Logo goes here</div>
+
+    <!-- ===== CONTACT INFO ===== -->
+    <div class="contact">
+      <!-- EDIT: phone number. Change it in TWO places: the tel: part (numbers only) and the visible text -->
+      <p><a href="tel:9011112222">(901) 111-2222</a></p>
+      <!-- EDIT: email. Change it in TWO places: after mailto: and the visible text -->
+      <p><a href="mailto:jcsmiley@perseverenow.org">jcsmiley@perseverenow.org</a></p>
+    </div>
+
+  </main>
+</body>
+</html>
